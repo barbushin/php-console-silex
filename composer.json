@@ -1,0 +1,14 @@
+{
+    "name":        "chi-teck/SilexPhpConsole",
+    "type":        "library",
+    "keywords":   ["php", "console", "silex", "service", "provider"],
+    "description": "PHP Console service provider for Silex.",
+    "autoload": {
+        "psr-0": {
+           "ChiTeck\\SilexPhpConsole": "src"
+        }
+    },
+        "require-dev": {
+              "silex/silex": "*"
+        }
+}
