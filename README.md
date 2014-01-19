@@ -1,13 +1,14 @@
 # PHP Console service provider
 
-This is the [PHP Console](https://github.com/barbushin/php-console) service provider for [Silex](http://silex.sensiolabs.org)
+This is the [PHP Console](https://github.com/barbushin/php-console) service provider for [Silex](http://silex.sensiolabs.org).
 
-# Configuration
+Configuration
+-------------
 
 ```php
-// See PhpConsoleServiceProvider.php for complete options list.
+// See PhpConsoleServiceProvider.php for supported options.
 
-// Enable password protection. Disabled by default.
+// Enable password protection (disabled by default).
 $app['php_console.password'] = 'password';
 
 // Enable remote PHP code execution.
@@ -16,15 +17,15 @@ $app['php_console.remote_php_execution'] = true;
 // Enable PHP errors handler.
 $app['php_console.track_errors'] = true;
 
-
 // Register PHP Console
 $app->register(new ChiTeck\SilexPhpConsole\PhpConsoleServiceProvider());
 ```
 
-# Usage
+Usage
+-------------
 
 ```php
-// This three statements are equivalent.
+// These three statements are equivalent.
 
 $app['php_console']->getDebugDispatcher()->dispatchDebug($var, 'tags');
 
@@ -34,6 +35,7 @@ $app->pc($var, 'tags'); // PhpConsoleTrait should be enabled.
 
 ```
 
-# Links
+Links
+-------------
 
 See https://github.com/barbushin/php-console for detail information about PHP Console.
