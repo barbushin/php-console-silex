@@ -1,6 +1,6 @@
 <?php
 
-namespace ChiTeck\PhpConsoleServiceProvider;
+namespace ChiTeck\SilexPhpConsole;
 
 use Silex\ServiceProviderInterface;
 use Silex\Application;
@@ -20,7 +20,7 @@ class PhpConsoleServiceProvider implements ServiceProviderInterface
     {
 
         $app['php_console'] = $app->share(
-            function ($app) {
+            function () {
                 return Connector::getInstance();
             }
         );
