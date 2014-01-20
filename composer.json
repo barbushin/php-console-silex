@@ -9,6 +9,7 @@
         }
     },
         "require-dev": {
-              "silex/silex": "*"
+              "silex/silex": "*",
+              "php-console/php-console": "*"
         }
 }
