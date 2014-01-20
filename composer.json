@@ -1,7 +1,7 @@
 {
     "name":        "chi-teck/php-console-silex",
     "type":        "library",
-    "keywords":   ["php-console", "php", "console", "silex", "service", "provider"],
+    "keywords":   ["php-console", "php", "silex", "service", "provider", "errors", "debug", "logger"],
     "description": "PHP Console service provider for Silex.",
     "autoload": {
         "psr-0": {
