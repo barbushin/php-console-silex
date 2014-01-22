@@ -46,7 +46,9 @@ class PhpConsoleServiceProvider implements ServiceProviderInterface
 
         if (isset($app['php_console.password'], $app['php_console.remote_php_execution'])) {
             $eval_provider = $connector->getEvalDispatcher()->getEvalProvider();
-            $eval_provider->setOpenBaseDirs(array(__DIR__));
+            if (!empty($app['php_console.open_base_dirs'])) {
+                $eval_provider->setOpenBaseDirs($app['php_console.open_base_dirs']);
+            }
             $connector->startEvalRequestsListener();
         }
 
