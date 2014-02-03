@@ -1,15 +1,38 @@
 {
-    "name":        "chi-teck/php-console-silex",
-    "type":        "library",
-    "keywords":   ["php-console", "php", "silex", "service", "provider", "errors", "debug", "logger"],
-    "description": "PHP Console service provider for Silex.",
-    "autoload": {
-        "psr-0": {
-           "ChiTeck\\SilexPhpConsole": "src"
-        }
-    },
-        "require-dev": {
-              "silex/silex": "1.*",
-              "php-console/php-console": "3.*"
-        }
-}
+	"name": "php-console/silex-service-provider",
+	"type": "library",
+	"keywords": ["php-console", "php", "silex", "service provider", "errors", "debug", "logger", "chrome"],
+	"description": "Silex service provider to handle PHP errors, dump variables, execute PHP code remotely in Google Chrome",
+	"homepage": "https://github.com/barbushin/php-console-silex",
+	"license": "BSD 3-Clause",
+	"authors": [
+		{
+			"name": "Ivan",
+			"homepage": "https://github.com/chi-teck"
+		},
+		{
+			"name": "Sergey Barbushin",
+			"homepage": "http://linkedin.com/in/barbushin",
+			"email": "barbushin@gmail.com"
+		}
+
+	],
+	"support": {
+		"issues": "https://github.com/barbushin/php-console-silex/issues?state=open"
+	},
+	"autoload": {
+		"psr-0": {
+			"PhpConsole\\Silex": "src"
+		}
+	},
+	"require": {
+		"php": ">=5.3",
+		"silex/silex": "1.*",
+		"php-console/php-console": ">3.1"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		}
+	}
+} 
