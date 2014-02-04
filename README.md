@@ -7,10 +7,9 @@ This packages integrates [PHP Console server library](https://github.com/barbush
 ## Installation
 
 1. Install Google Chrome extension [PHP Console](https://chrome.google.com/webstore/detail/php-console/nfhmhhlpfleoednkpnnnkolmclajemef).
+2. Add `"php-console/silex-service-provider": "1.*"` package in Silex project `composer.json` and run `composer update`.
 
-2. Require this package in Silex project `composer.json` and run `composer update`
-
-	"php-console/silex-service-provider": "1.*"
+	
 
 ## Configuration
 
