@@ -49,4 +49,4 @@ Now you can debug vars using PhpConsole global helper class `PC`:
 
 Also you can extended `Silex\Application` class with `use PhpConsole\Silex\ApplicationHelperTrait` and debug using:
 
-$app->pc($var, 'tags');
+	$app->pc($var, 'tags');
