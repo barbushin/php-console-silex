@@ -10,7 +10,6 @@ This packages integrates [PHP Console server library](https://github.com/barbush
 2. Add `"php-console/silex-service-provider": "1.*"` package in Silex project `composer.json` and run `composer update`.
 
 	
-
 ## Configuration
 
 To handle errors occurred on Silex initialization PhpConsole service provider should be initialized right after `Silex\Application`:
